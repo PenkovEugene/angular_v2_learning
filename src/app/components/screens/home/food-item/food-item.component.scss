@@ -1,0 +1,17 @@
+.item {
+  @apply bg-white rounded mb-2 p-4 text-center block;
+
+  .image {
+    >img {
+      @apply mb-2 mx-auto;
+      height: 190px;
+    }
+  }
+  .heading {
+    @apply font-medium mb-2 block text-lg;
+  }
+
+  .price {
+    @apply text-orange-500 font-semibold;
+  }
+}

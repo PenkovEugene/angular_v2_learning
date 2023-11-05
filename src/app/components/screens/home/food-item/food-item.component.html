@@ -1,0 +1,11 @@
+<div *ngIf="food">
+  <a [routerLink]="'/food/' + food.id" class="item">
+    <span class="image"><img [src]="food.image" [alt]="food.title"></span>
+    <span class="heading">
+      {{food.title}}
+    </span>
+    <span class="price">
+      {{food.price | currency: 'RUB '}}
+    </span>
+  </a>
+</div>
